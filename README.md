@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IonGuard Pro — Website
 
-## Getting Started
+Premium multi-page marketing website for the **IonGuard Pro** Smart Charging Cabinet brand.
 
-First, run the development server:
+Built with **Next.js 15**, **TypeScript**, and **Tailwind CSS v4** using the "Kinetic Monolith" design philosophy.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm
+
+### Install & Run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-## Learn More
+## 📦 Build & Deploy (Cloudflare Pages)
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Static output → `out/` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Cloudflare Pages setup:
+1. Push repo to GitHub
+2. Connect in [Cloudflare Pages dashboard](https://dash.cloudflare.com/)
+3. Build config:
+   - **Build command**: `npm run build`
+   - **Output directory**: `out`
+   - **Node.js version**: `18`
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎬 Changing the Hero Video
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Replace the file at `public/video/Lithium_batteries_Fire.mp4`, or update the `src` in:
+- `src/app/page.tsx` → `HeroVideo` component
+- `src/app/layout.tsx` → preload `<link>` and preload `<script>`
+
+---
+
+## 🛍️ Updating Products
+
+Edit `src/app/products/page.tsx` → `products` array. Each product has `name`, `series`, `image`, `specs`, and `features`. Place product images in `public/images/`.
+
+---
+
+## 🤖 Chatbot (n8n)
+
+`src/components/ChatbotWidget.tsx` is visual-only. Add your n8n webhook URL as `NEXT_PUBLIC_N8N_WEBHOOK_URL` env var and wire the send handler.
+
+---
+
+## 📬 Contact Form (n8n)
+
+`src/app/contact/page.tsx` form is visual-only. Add `NEXT_PUBLIC_N8N_CONTACT_WEBHOOK` env var and update `handleSubmit`.
+
+---
+
+## 🎨 Design System
+
+All tokens in `src/app/globals.css` via Tailwind v4 `@theme`:
+- **Safety Yellow**: `#FEDD00` → `primary-container`
+- **Deep Charcoal**: `#121416` → `surface`
+- **Fonts**: Inter, Space Grotesk, Roboto Mono
