@@ -56,7 +56,7 @@ function HeroVideo() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-screen overflow-hidden bg-surface-container-lowest"
+      className="relative w-full h-[50vh] md:h-screen overflow-hidden bg-surface-container-lowest"
     >
       {/* Video */}
       <video

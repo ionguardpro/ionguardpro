@@ -193,10 +193,10 @@ function ContactForm({
   submitted: boolean;
 }) {
   const inputClass =
-    "w-full bg-surface-container-high/40 border-b border-outline-variant/50 focus:border-primary-container focus:bg-surface-container-high focus:ring-0 focus:outline-none text-on-surface font-mono py-4 px-4 transition-all placeholder:text-on-surface-variant/30 text-sm";
+    "w-full bg-surface-container-high/40 border-b border-outline-variant/60 focus:border-primary-container focus:bg-surface-container-high focus:ring-0 focus:outline-none text-on-surface font-mono py-4 px-4 transition-all placeholder:text-on-surface-variant/70 text-base";
 
   const labelClass =
-    "block font-label text-[10px] tracking-[0.2em] uppercase text-primary-container/80 group-focus-within:text-primary-container transition-colors mb-2";
+    "block font-label text-xs tracking-[0.2em] uppercase text-primary-container group-focus-within:text-primary transition-colors mb-2";
 
   return (
     <AnimatedSection direction="right" className="lg:col-span-7">
@@ -257,7 +257,7 @@ function ContactForm({
               <select
                 value={formData.sector}
                 onChange={(e) => setFormData({ ...formData, sector: e.target.value })}
-                className="w-full bg-surface-container-high/40 border-b border-outline-variant/50 focus:border-primary-container focus:bg-surface-container-high focus:ring-0 focus:outline-none text-on-surface font-mono py-4 px-4 transition-all text-sm appearance-none cursor-pointer placeholder:text-on-surface-variant/30"
+                className="w-full bg-surface-container-high/40 border-b border-outline-variant/60 focus:border-primary-container focus:bg-surface-container-high focus:ring-0 focus:outline-none text-on-surface font-mono py-4 px-4 transition-all text-base appearance-none cursor-pointer placeholder:text-on-surface-variant/70"
               >
                 <option value="" className="bg-surface-container-low">Select sector</option>
                 <option value="residential" className="bg-surface-container-low">Residential</option>

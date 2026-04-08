@@ -21,7 +21,7 @@ export function Footer() {
             <div className="font-black text-primary-container uppercase tracking-tighter text-xl mb-6 font-headline">
               IONGUARD PRO
             </div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-neutral-600 max-w-xs leading-relaxed">
+            <p className="font-mono text-xs uppercase tracking-[0.15em] text-neutral-400 max-w-xs leading-relaxed">
               © {new Date().getFullYear()} IonGuard Pro. Engineered for Kinetic
               Precision. Designed for total containment and architectural
               integration.
@@ -30,7 +30,7 @@ export function Footer() {
 
           {/* Navigation Column */}
           <div>
-            <h4 className="font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-6">
+            <h4 className="font-label text-xs uppercase tracking-[0.2em] text-neutral-300 mb-6">
               Navigation
             </h4>
             <ul className="space-y-4">
@@ -38,7 +38,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-600 hover:text-primary-container transition-colors duration-300"
+                    className="font-mono text-sm uppercase tracking-[0.15em] text-neutral-400 hover:text-primary-container transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -49,7 +49,7 @@ export function Footer() {
 
           {/* Legal Column */}
           <div>
-            <h4 className="font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-6">
+            <h4 className="font-label text-xs uppercase tracking-[0.2em] text-neutral-300 mb-6">
               Legal
             </h4>
             <ul className="space-y-4">
@@ -57,7 +57,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-600 hover:text-primary-container transition-colors duration-300"
+                    className="font-mono text-sm uppercase tracking-[0.15em] text-neutral-400 hover:text-primary-container transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -69,7 +69,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-700">
+          <p className="font-label text-xs uppercase tracking-[0.2em] text-neutral-400">
             Intelligent. Secure. Sustainable.
           </p>
           <div className="flex items-center gap-2">
@@ -77,7 +77,7 @@ export function Footer() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-container" />
             </span>
-            <span className="font-mono text-[10px] text-primary-fixed-dim uppercase tracking-widest">
+            <span className="font-mono text-xs text-primary-fixed-dim uppercase tracking-widest">
               Systems Online
             </span>
           </div>
