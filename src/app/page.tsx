@@ -508,7 +508,7 @@ function CTASection() {
 
       <div className="relative z-10 max-w-3xl mx-auto">
         <AnimatedSection>
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter mb-8 font-headline">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter mb-8 font-headline break-words hyphens-auto">
             Plan your infrastructure
           </h2>
         </AnimatedSection>
