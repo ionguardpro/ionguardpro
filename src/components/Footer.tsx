@@ -3,7 +3,7 @@ import Link from "next/link";
 const footerLinks = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
-  { href: "/contact", label: "Contact Engineering" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const legalLinks = [
@@ -13,7 +13,7 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-950 border-t border-neutral-900">
+    <footer className="bg-neutral-950 border-t border-neutral-900 relative z-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand Column */}
@@ -30,7 +30,7 @@ export function Footer() {
 
           {/* Navigation Column */}
           <div>
-            <h4 className="font-label text-xs uppercase tracking-[0.2em] text-neutral-300 mb-6">
+            <h4 className="font-label text-xs uppercase tracking-[0.2em] text-white mb-6">
               Navigation
             </h4>
             <ul className="space-y-4">
@@ -49,7 +49,7 @@ export function Footer() {
 
           {/* Legal Column */}
           <div>
-            <h4 className="font-label text-xs uppercase tracking-[0.2em] text-neutral-300 mb-6">
+            <h4 className="font-label text-xs uppercase tracking-[0.2em] text-white mb-6">
               Legal
             </h4>
             <ul className="space-y-4">
