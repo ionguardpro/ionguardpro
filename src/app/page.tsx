@@ -100,7 +100,7 @@ function HeroVideo() {
 
 function Manifesto() {
   return (
-    <section className="relative bg-surface py-32 px-6 md:px-20">
+    <section className="relative bg-surface py-1 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection direction="up" delay={0.1}>
           <span className="font-label uppercase tracking-[0.3em] text-primary-container mb-6 block text-xs">
@@ -334,7 +334,7 @@ function SolutionShowcase() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8">
           {/* Tab Buttons */}
-          <div className="lg:col-span-4 flex flex-row lg:flex-col gap-2 md:gap-4">
+          <div className="lg:col-span-4 flex flex-col gap-2 md:gap-4">
             {solutions.map((sol, i) => (
               <motion.button
                 key={sol.id}
