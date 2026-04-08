@@ -354,7 +354,7 @@ function ProductGrid() {
 
 function ProtectionStandards() {
   return (
-    <section className="px-6 md:px-12 py-20 md:py-32">
+    <section className="px-6 md:px-12 py-1 md:py-32">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
           <div className="bg-surface-container-low p-8 md:p-12 flex flex-col lg:flex-row gap-12 items-center">
