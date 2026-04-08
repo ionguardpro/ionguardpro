@@ -174,7 +174,7 @@ const valueProps = [
 
 function TripleCrown() {
   return (
-    <section className="py-24 px-6 md:px-8 bg-surface">
+    <section className="py-5 px-6 md:px-8 bg-surface">
       <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-1 max-w-7xl mx-auto">
         {valueProps.map((prop) => (
           <StaggerItem key={prop.title}>
@@ -219,7 +219,7 @@ function RiskSolution() {
     <section ref={sectionRef} className="grid grid-cols-1 md:grid-cols-2">
       {/* Threat Side */}
       <AnimatedSection direction="left" className="h-full">
-        <div className="bg-neutral-900 p-12 md:p-20 lg:p-32 flex flex-col justify-center min-h-[500px]">
+        <div className="bg-neutral-900 p-12 md:p-20 lg:p-32 flex flex-col justify-center min-h-[100px]">
           <span className="font-label text-error tracking-[0.2em] uppercase text-xs mb-6">
             Threat Matrix
           </span>
@@ -238,7 +238,7 @@ function RiskSolution() {
       <AnimatedSection direction="right" className="h-full">
         <motion.div
           style={{ y }}
-          className="bg-primary-container text-on-primary p-12 md:p-20 lg:p-32 flex flex-col justify-center relative overflow-hidden min-h-[500px]"
+          className="bg-primary-container text-on-primary p-12 md:p-20 lg:p-32 flex flex-col justify-center relative overflow-hidden min-h-[100px]"
         >
           {/* Background Icon */}
           <div className="absolute -right-20 -bottom-20 opacity-10">
@@ -324,7 +324,7 @@ function SolutionShowcase() {
   const active = solutions[activeTab];
 
   return (
-    <section className="py-24 md:py-32 px-6 md:px-8 bg-surface-container-lowest">
+    <section className="py-1 md:py-32 px-6 md:px-8 bg-surface-container-lowest">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
           <h2 className="text-xs font-label uppercase tracking-[0.4em] text-primary-container mb-12">
@@ -442,7 +442,7 @@ const techSpecs = [
 
 function AuthoritySpecs() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-8 bg-surface border-t border-outline-variant/10">
+    <section className="py-10 md:py-32 px-6 md:px-8 bg-surface border-t border-outline-variant/10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20">
         {/* Left: Certifications */}
         <AnimatedSection direction="left" className="md:w-1/3">
@@ -500,7 +500,7 @@ function AuthoritySpecs() {
 
 function CTASection() {
   return (
-    <section className="relative py-32 md:py-40 px-6 md:px-8 text-center overflow-hidden">
+    <section className="relative py-10 md:py-40 px-6 md:px-8 text-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0 bg-neutral-950">
         <div className="absolute inset-0 dot-grid-bg opacity-[0.07] animate-grid-pulse" />
