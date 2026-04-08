@@ -68,10 +68,23 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-label text-xs uppercase tracking-[0.2em] text-neutral-400">
+        <div className="mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="font-label text-xs uppercase tracking-[0.2em] text-neutral-400 text-center md:text-left">
             Intelligent. Secure. Sustainable.
           </p>
+          
+          <p className="font-mono text-xs uppercase tracking-[0.1em] text-neutral-500 text-center">
+            Created by{" "}
+            <a
+              href="https://www.moihanatech.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-container hover:text-white transition-colors duration-300 font-bold"
+            >
+              MoiHanaTech
+            </a>
+          </p>
+
           <div className="flex items-center gap-2">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75" />
