@@ -75,21 +75,7 @@ function HeroVideo() {
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-surface to-transparent z-10" />
 
       {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 1 }}
-        animate={{ opacity: hasScrolled ? 0 : 1 }}
-        transition={{ duration: 0.5 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3 pointer-events-none"
-      >
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-on-surface/60">
-          Scroll to explore
-        </span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-[1px] h-8 bg-gradient-to-b from-primary-container to-transparent"
-        />
-      </motion.div>
+
     </section>
   );
 }
