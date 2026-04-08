@@ -72,7 +72,7 @@ function FeaturedProduct() {
               {/* Product Image */}
               <div className="w-full md:w-1/2 aspect-square bg-surface-container-high relative overflow-hidden p-8">
                 <img
-                  className="w-full h-full object-contain grayscale contrast-125 opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-contain contrast-125 opacity-90 group-hover:opacity-100 transition-all duration-700"
                   alt="JAH-010401G Smart Charging Cabinet"
                   src="/images/JAH-010401 G.png"
                 />
@@ -274,7 +274,7 @@ function ProductGrid() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-700"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700"
                   />
                   {product.badge && (
                     <div className="absolute top-3 left-3 bg-primary-container text-on-primary px-3 py-1 text-[9px] font-label font-bold tracking-widest uppercase">

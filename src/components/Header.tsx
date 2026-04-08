@@ -73,13 +73,6 @@ export function Header() {
 
         {/* Desktop CTA + Mobile Toggle */}
         <div className="flex items-center gap-4">
-          <Link
-            href="/contact"
-            className="hidden md:block bg-primary-container text-on-primary px-6 py-2.5 text-xs font-black tracking-[0.15em] uppercase hover:bg-primary-fixed-dim active:scale-[0.97] transition-all duration-200"
-          >
-            REQUEST QUOTE
-          </Link>
-
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -132,19 +125,6 @@ export function Header() {
                 </Link>
               </motion.div>
             ))}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              <Link
-                href="/contact"
-                onClick={() => setMobileOpen(false)}
-                className="mt-4 bg-primary-container text-on-primary px-10 py-4 text-sm font-black tracking-[0.2em] uppercase"
-              >
-                REQUEST QUOTE
-              </Link>
-            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
