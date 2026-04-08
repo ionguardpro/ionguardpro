@@ -34,18 +34,19 @@ export default function HomePage() {
 function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [hasStarted, setHasStarted] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
-    let triggered = false;
+    // Attempt to explicitly play the video directly on mount as a fallback for browsers that block autoPlay attribute
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
 
     const handleScroll = () => {
-      if (triggered) return;
       if (window.scrollY > 10) {
-        triggered = true;
-        setHasStarted(true);
-        videoRef.current?.play().catch(() => {});
-        window.removeEventListener("scroll", handleScroll);
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
       }
     };
 
@@ -62,13 +63,12 @@ function HeroVideo() {
       <video
         ref={videoRef}
         src="/video/Lithium_batteries_Fire.mp4"
+        autoPlay
         muted
         loop
         playsInline
         preload="auto"
-        className={`absolute inset-0 w-full h-full object-contain md:object-cover transition-opacity duration-1000 ${
-          hasStarted ? "opacity-100" : "opacity-70"
-        }`}
+        className="absolute inset-0 w-full h-full object-contain md:object-cover"
       />
 
       {/* Bottom gradient for smooth transition */}
@@ -76,13 +76,13 @@ function HeroVideo() {
 
       {/* Scroll indicator */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: hasStarted ? 0 : 1 }}
+        initial={{ opacity: 1 }}
+        animate={{ opacity: hasScrolled ? 0 : 1 }}
         transition={{ duration: 0.5 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3"
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3 pointer-events-none"
       >
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-on-surface/60">
-          Scroll to begin
+          Scroll to explore
         </span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
