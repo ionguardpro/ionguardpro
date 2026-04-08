@@ -492,7 +492,7 @@ function CTASection() {
         <div className="absolute inset-0 dot-grid-bg opacity-[0.07] animate-grid-pulse" />
       </div>
 
-      <div className="relative z-10 max-w-3xl mx-auto">
+      <div className="relative z-10 max-w-5xl mx-auto">
         <AnimatedSection>
           <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter mb-8 font-headline break-words hyphens-auto">
             Plan your infrastructure
@@ -519,12 +519,6 @@ function CTASection() {
                 engineering
               </span>
               Request Information
-            </Link>
-            <Link
-              href="/contact"
-              className="ghost-border text-on-surface font-black uppercase tracking-widest px-12 py-6 hover:bg-white/5 flex items-center justify-center gap-3 transition-all duration-300"
-            >
-              Speak to an Engineer
             </Link>
           </div>
         </AnimatedSection>
