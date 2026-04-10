@@ -169,12 +169,12 @@ function TripleCrown() {
             >
               <div>
                 <span
-                  className="material-symbols-outlined text-primary-container text-6xl mb-12 block group-hover:scale-110 transition-transform duration-300"
+                  className="material-symbols-outlined text-primary-container text-8xl mb-4 block group-hover:scale-110 transition-transform duration-300"
                   style={{ fontVariationSettings: "'FILL' 1" }}
                 >
                   {prop.icon}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter mb-8 font-headline">
+                <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter mb-2 font-headline">
                   {prop.title}
                 </h3>
               </div>
