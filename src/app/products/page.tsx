@@ -155,6 +155,7 @@ interface Product {
   id: string;
   name: string;
   series: string;
+  generation: 1 | 2 | 3 | 4;
   image: string;
   specs: { label: string; value: string }[];
   features: string[];
@@ -162,105 +163,182 @@ interface Product {
 }
 
 const products: Product[] = [
+  // Generation 1
   {
-    id: "ion-core-02",
-    name: "ION-CORE-02",
-    series: "Compact Series",
-    badge: "Popular",
+    id: "jah-010112",
+    name: "JAH-0101",
+    series: "Smart Generation One",
+    generation: 1,
+    badge: "Base Entry",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDRN19N1_4O7KbyqnroMoMx30kHlMcG5Kv1x4JaKGwmJk28nZUqChvDQbVd0Vmd_mAU8HbH2PUybKTgCDvEbmLy01je3-lLEXfkxbIMTgKrzNRPFM8P0ZFz9QGkjFmh8OVPJetiLUCzw_0LD6B1PYtrfIrqePheWud3gjKstJfs_8yXUWx7MgX6tTTKrT9WQ6gPiqxgeoAlG6HTIaIHz5mbCCSgxaCx84xP-mNgcDbU3mMvSIg3p__8Vngjz7V-w2apqZEY9EU-8Gw",
     specs: [
-      { label: "Isolation", value: "Thermal Level 4" },
-      { label: "Charging", value: "Smart Flow" },
-      { label: "Dimensions", value: "1200 × 800 × 450 mm" },
+      { label: "Volume", value: "12 Gallons" },
+      { label: "Shelves", value: "1 Piece" },
+      { label: "Lock", value: "3-Point Linkage" },
     ],
-    features: ["Compact footprint", "Smart diagnostics"],
+    features: ["Explosion-proof cabinet", "Automatic ventilation", "Leakage protection"],
   },
   {
-    id: "jah-pro-x",
-    name: "JAH-PRO-X",
-    series: "Thermal Runaway Isolation",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCO3MRWG-PbMfvDduKIZu_MIwp9Y8AQHEuIQmLUbN0FYJJIyoYzLV1Pq3CDbGVKD0TeS4QiQXYCxZB4psv0-1BxznCQVgOGZ6SrjI-hyFY-Wo_XkAtdWeu7k_LiMYuN3Ism4zPGLG9TRDljgr16uPYiPM95EC2ULBS4gVRN76yfAAA1yVPWJpoZlbPIY0RQLspVSXVnvTY8Bkuhmx37S_6iM_jZKHSLF2rfOmsS92zXyLXeZ6KM_LwiTNAhAyGUcw8OnrTU3SynoTk",
-    specs: [
-      { label: "Isolation", value: "Thermal Level 5" },
-      { label: "Suppression", value: "Active Gas" },
-      { label: "Dimensions", value: "1600 × 1000 × 520 mm" },
-    ],
-    features: ["Multi-stage pressure relief", "Autonomous fire suppression"],
-  },
-  {
-    id: "ion-vault-s1",
-    name: "ION-VAULT-S1",
-    series: "Residential Series",
+    id: "jah-010115",
+    name: "JAH-010115",
+    series: "Smart Generation One",
+    generation: 1,
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBoi92z1Hd-yKlr2l5yJaDpbd7xLaKPIvHFfM0g6V5HUmuzaWUOMmOq526HrQeR1-E2bvJi-LmdUD00QnQ-qmj8EhnqW_MvAyZZTTRnDncTrqwk-COGM-Cb3ObBG0gfgK-3OO1kJXPkW3ACsvD5dQD04Q9PhKGDuUI1dXYB_b0LtG-iViKJmh079FX7Wmrl3z5J0Nl_zl_I3s77ASUiMRJhPW7e-qHcHPTm81fs71EUHW5Jp-26jRAvJAKHyPWaHFUwyXxbUIVVp34",
     specs: [
-      { label: "Isolation", value: "Thermal Level 3" },
-      { label: "Charging", value: "Adaptive Flow" },
-      { label: "Dimensions", value: "900 × 600 × 400 mm" },
+      { label: "Volume", value: "15 Gallons" },
+      { label: "Shelves", value: "1 Piece" },
+      { label: "Lock", value: "3-Point Linkage" },
     ],
-    features: ["Smart home integration", "Silent operation"],
+    features: ["Bull socket", "Adjustable shelves", "Overload protection"],
+  },
+  
+  // Generation 2
+  {
+    id: "jah-01021",
+    name: "JAH-01021",
+    series: "Smart Second Generation",
+    generation: 2,
+    badge: "Popular",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCO3MRWG-PbMfvDduKIZu_MIwp9Y8AQHEuIQmLUbN0FYJJIyoYzLV1Pq3CDbGVKD0TeS4QiQXYCxZB4psv0-1BxznCQVgOGZ6SrjI-hyFY-Wo_XkAtdWeu7k_LiMYuN3Ism4zPGLG9TRDljgr16uPYiPM95EC2ULBS4gVRN76yfAAA1yVPWJpoZlbPIY0RQLspVSXVnvTY8Bkuhmx37S_6iM_jZKHSLF2rfOmsS92zXyLXeZ6KM_LwiTNAhAyGUcw8OnrTU3SynoTk",
+    specs: [
+      { label: "Volume", value: "15 Gallons" },
+      { label: "Shelves", value: "1 Piece" },
+      { label: "Sensors", value: "Temp & Smoke" },
+    ],
+    features: ["Aerosol fire suppression", "Real-time temp monitoring", "High temp alarm"],
   },
   {
-    id: "ion-fort-x2",
-    name: "ION-FORT-X2",
-    series: "Industrial Series",
-    badge: "Heavy Duty",
+    id: "jah-010260",
+    name: "JAH-010260",
+    series: "Smart Second Generation",
+    generation: 2,
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCPsSxLooJpK6UcDwovs1KdEDzMmMxUZ2slA9CcCo61LR6zjo3I94x28OqJldNcsZamL0pfpW3zC_QAJpQwuyvHXsmpvYGZ7_o01EyysD2eeoGsar2GAE6enThcX19tsUkh3QYm3_graWHqYhCWZBwB1wscZnaZSDvEHmQRS1olj99jQXCYn7GvdJL-NLyQ07H9TxQP0luQCcZBMAT1eQ2PwaVM_jrGeMQIp6YydmauOBiIBHfymT_3CxoDt06sp_mJ3PQ0g5iqG9A",
     specs: [
-      { label: "Isolation", value: "Thermal Level 6" },
-      { label: "Suppression", value: "Dual-Agent" },
-      { label: "Dimensions", value: "2100 × 1400 × 650 mm" },
+      { label: "Volume", value: "60 Gallons" },
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Suppression", value: "Aerosol" },
     ],
-    features: ["Extreme temperature rated", "Ruggedized chassis"],
+    features: ["High temp power-off", "Real-time monitoring", "Adjustable shelves"],
   },
+
+  // Generation 3
   {
-    id: "ion-fleet-m3",
-    name: "ION-FLEET-M3",
-    series: "Fleet Management",
+    id: "jah-010303",
+    name: "JAH-010303",
+    series: "Smart Third Generation",
+    generation: 3,
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD9oYuay1f4cDs1-nwsyxRZaJfPVYi4BsUi4fy8qoVlPFKFQk2uqNhX-Mk3EAvJuvoUd_GcPLj4I3zbnlaAO8O6OJCTVS5ZKjG98PLKoUUVLiadPcTZ298KN0u4HQ534LTBNlqU8jteINXrhQCraUCqrW-z3ql5631faEZSKp-20wPZ3VIEf6O0JrgZTN5_PczK08xLkIEGViAwiYOrWUH4IdQQqAchwJEcOuhcldTiymWSizKX-PBBhAS1Oc065_MX0XVHQS5eRRQ",
     specs: [
-      { label: "Bays", value: "12 Units" },
-      { label: "Charging", value: "Sequential Smart" },
-      { label: "Dimensions", value: "1800 × 1200 × 550 mm" },
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Lock", value: "3-Point Linkage" },
+      { label: "Socket", value: "PDU Industrial" },
     ],
-    features: ["Fleet-scale management", "Remote monitoring"],
+    features: ["Intelligent charging management", "Timed charging", "Voice broadcast"],
   },
   {
-    id: "ion-rack-e1",
-    name: "ION-RACK-E1",
-    series: "Enterprise Rack",
+    id: "jah-010301g",
+    name: "JAH-010301G",
+    series: "Smart Third Generation",
+    generation: 3,
+    badge: "Advanced",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDRN19N1_4O7KbyqnroMoMx30kHlMcG5Kv1x4JaKGwmJk28nZUqChvDQbVd0Vmd_mAU8HbH2PUybKTgCDvEbmLy01je3-lLEXfkxbIMTgKrzNRPFM8P0ZFz9QGkjFmh8OVPJetiLUCzw_0LD6B1PYtrfIrqePheWud3gjKstJfs_8yXUWx7MgX6tTTKrT9WQ6gPiqxgeoAlG6HTIaIHz5mbCCSgxaCx84xP-mNgcDbU3mMvSIg3p__8Vngjz7V-w2apqZEY9EU-8Gw",
     specs: [
-      { label: "Isolation", value: "Thermal Level 4" },
-      { label: "Network", value: "IoT Enabled" },
-      { label: "Dimensions", value: "1500 × 900 × 480 mm" },
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Lock", value: "3-Point Linkage" },
+      { label: "Extinguishing", value: "Aerosolized Amine" },
     ],
-    features: ["Cloud dashboard", "Predictive maintenance"],
+    features: ["Power-off when fully charged", "Intelligent management", "PDU industrial socket"],
   },
+
+  // Generation 4
+  {
+    id: "jah-010403",
+    name: "JAH-010403",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    badge: "Flagship",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDRN19N1_4O7KbyqnroMoMx30kHlMcG5Kv1x4JaKGwmJk28nZUqChvDQbVd0Vmd_mAU8HbH2PUybKTgCDvEbmLy01je3-lLEXfkxbIMTgKrzNRPFM8P0ZFz9QGkjFmh8OVPJetiLUCzw_0LD6B1PYtrfIrqePheWud3gjKstJfs_8yXUWx7MgX6tTTKrT9WQ6gPiqxgeoAlG6HTIaIHz5mbCCSgxaCx84xP-mNgcDbU3mMvSIg3p__8Vngjz7V-w2apqZEY9EU-8Gw",
+    specs: [
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Management", value: "Remote via Mobile/PC" },
+    ],
+    features: ["Remote management via PC", "Smart flow routing", "Aerosol fire extinguishing"],
+  },
+  {
+    id: "jah-010401g",
+    name: "JAH-010401G",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    badge: "Enterprise",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCPsSxLooJpK6UcDwovs1KdEDzMmMxUZ2slA9CcCo61LR6zjo3I94x28OqJldNcsZamL0pfpW3zC_QAJpQwuyvHXsmpvYGZ7_o01EyysD2eeoGsar2GAE6enThcX19tsUkh3QYm3_graWHqYhCWZBwB1wscZnaZSDvEHmQRS1olj99jQXCYn7GvdJL-NLyQ07H9TxQP0luQCcZBMAT1eQ2PwaVM_jrGeMQIp6YydmauOBiIBHfymT_3CxoDt06sp_mJ3PQ0g5iqG9A",
+    specs: [
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Management", value: "Remote via Mobile/PC" },
+    ],
+    features: ["Intelligent active cooling", "Multi-layer isolation", "Voice broadcast API"],
+  }
 ];
 
 function ProductGrid() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [activeGen, setActiveGen] = useState<number | "All">("All");
+
+  const filterGenerations = [
+    { id: "All", label: "All Models" },
+    { id: 1, label: "Generation 1" },
+    { id: 2, label: "Generation 2" },
+    { id: 3, label: "Generation 3" },
+    { id: 4, label: "Generation 4" },
+  ];
+
+  const filteredProducts =
+    activeGen === "All"
+      ? products
+      : products.filter((p) => p.generation === activeGen);
 
   return (
     <section className="px-6 md:px-12 pb-12">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
-          <div className="flex items-center gap-3 mb-10">
-            <div className="h-[2px] w-12 bg-primary-container" />
-            <span className="font-label text-on-surface-variant text-xs font-bold uppercase tracking-widest">
-              Full Product Range
-            </span>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+            <div className="flex items-center gap-3">
+              <div className="h-[2px] w-12 bg-primary-container" />
+              <span className="font-label text-on-surface-variant text-xs font-bold uppercase tracking-widest">
+                Full Product Range
+              </span>
+            </div>
+
+            {/* Filter Tabs */}
+            <div className="flex flex-wrap gap-2">
+              {filterGenerations.map((gen) => (
+                <button
+                  key={gen.id}
+                  onClick={() => setActiveGen(gen.id as number | "All")}
+                  className={`px-4 py-2 font-mono text-xs uppercase tracking-widest transition-all duration-300 border ${
+                    activeGen === gen.id
+                      ? "border-primary-container bg-primary-container/10 text-primary-container"
+                      : "border-neutral-800 text-neutral-400 hover:border-neutral-600 text-on-surface-variant"
+                  }`}
+                >
+                  {gen.label}
+                </button>
+              ))}
+            </div>
           </div>
         </AnimatedSection>
 
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product) => (
+        <StaggerContainer key={activeGen} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredProducts.map((product) => (
             <StaggerItem key={product.id}>
               <motion.div
                 onMouseEnter={() => setHoveredId(product.id)}
