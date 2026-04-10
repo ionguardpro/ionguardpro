@@ -539,9 +539,18 @@ function ProductGrid() {
           </div>
         </AnimatedSection>
 
-        <StaggerContainer key={activeGen} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProducts.map((product) => (
-            <StaggerItem key={product.id}>
+        <div key={activeGen} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredProducts.map((product, index) => (
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.3,
+                delay: Math.min(index * 0.05, 0.5),
+                ease: "easeOut",
+              }}
+            >
               <motion.div
                 onMouseEnter={() => setHoveredId(product.id)}
                 onMouseLeave={() => setHoveredId(null)}
@@ -620,9 +629,9 @@ function ProductGrid() {
                   </button>
                 </div>
               </motion.div>
-            </StaggerItem>
+            </motion.div>
           ))}
-        </StaggerContainer>
+        </div>
       </div>
     </section>
   );
