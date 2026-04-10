@@ -35,7 +35,7 @@ function ProductsHero() {
       <div className="max-w-7xl mx-auto">
         <AnimatedSection delay={0.1}>
           <span className="font-label text-primary tracking-[0.3em] text-xs font-bold uppercase mb-4 block">
-            System Catalog v4.0
+            Smart Charging Cabinet Series
           </span>
         </AnimatedSection>
 
@@ -48,9 +48,10 @@ function ProductsHero() {
 
         <AnimatedSection delay={0.35}>
           <p className="max-w-2xl text-on-surface-variant font-medium text-lg leading-relaxed border-l-2 border-outline-variant pl-6">
-            Precision-machined energy storage architectures designed for
-            high-density environments. Our charging cabinets integrate advanced
-            thermal runaway isolation and intelligent power management protocols.
+            Professional charging solutions covering intelligent charging
+            cabinets, secure storage cabinets, and explosion-proof cabinets.
+            Comprehensive customized production services adapted to your
+            specific needs and site conditions.
           </p>
         </AnimatedSection>
       </div>
@@ -96,9 +97,9 @@ function FeaturedProduct() {
                     {[
                       { label: "Shelves", value: "3 Pieces" },
                       { label: "Security", value: "Top & Bottom Locks" },
-                      { label: "Volume", value: "1780 × 1100 × 520 mm" },
-                      { label: "Fire Rating", value: "Class A" },
-                      { label: "Charging", value: "Smart Flow Technology" },
+                      { label: "Dimensions", value: "1780 × 1100 × 520 mm" },
+                      { label: "Socket", value: "PDU Industrial" },
+                      { label: "Management", value: "Remote via Mobile & PC" },
                     ].map((spec) => (
                       <div
                         key={spec.label}
@@ -120,8 +121,8 @@ function FeaturedProduct() {
                   {[
                     { icon: "bolt", label: "Intelligent Management" },
                     { icon: "warning", label: "Explosion Proof" },
-                    { icon: "thermostat", label: "Active Cooling" },
-                    { icon: "lock", label: "Multi-Lock System" },
+                    { icon: "thermostat", label: "Temp Monitoring" },
+                    { icon: "lock", label: "Top & Bottom Locks" },
                   ].map((badge) => (
                     <div
                       key={badge.label}
@@ -441,26 +442,26 @@ function ProtectionStandards() {
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-[2px] w-12 bg-primary-container" />
                 <span className="font-label text-on-surface-variant text-xs font-bold uppercase tracking-widest">
-                  Protocol 7X Compliance
+                  Quality Certifications
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-black tracking-tighter uppercase leading-none mb-6 font-headline">
-                Extreme Protection
+                Certified
                 <br />
-                Standards
+                Excellence
               </h2>
               <p className="text-on-surface-variant font-medium text-sm leading-relaxed mb-8 max-w-lg">
-                Our Fourth Generation systems are built to withstand the harshest
-                industrial thermal events. Every cabinet undergoes rigorous
-                testing in our calibration facility to ensure absolute
-                reliability in critical infrastructure.
+                ISO9001, ISO14001, and ISO45001 certified for quality,
+                environment, and health management systems. CE and RoHS
+                certified. Every detail of our production process meets
+                international standards and industry specifications.
               </p>
 
               {/* Stats */}
               <div className="flex gap-8">
-                <CounterStat value="99.9" suffix="%" label="Reliability Rating" />
+                <CounterStat value="5" suffix="" label="Certifications" />
                 <div className="w-[1px] h-14 bg-outline-variant/30" />
-                <CounterStat value="<2" suffix="ms" label="Response Latency" />
+                <CounterStat value="4" suffix="" label="Generations" />
               </div>
             </div>
 

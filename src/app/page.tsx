@@ -138,21 +138,21 @@ const valueProps = [
   {
     icon: "shield_with_heart",
     title: "Absolute containment",
-    body: "Thermal runaway isolation. Advanced fire suppression built in. Total peace of mind.",
+    body: "Explosion-proof cabinet with automatic aerosol fire suppression. High temperature alarm and automatic power-off for total peace of mind.",
     bg: "bg-surface-container-low",
     hoverBg: "hover:bg-surface-container-high",
   },
   {
     icon: "query_stats",
-    title: "Intelligent energy",
-    body: "Real-time diagnostics. Automated cooling. Precision charging cycles.",
+    title: "Intelligent charging",
+    body: "Real-time temperature monitoring. Timed charging with automatic power-off when fully charged. Intelligent charging management via mobile and PC.",
     bg: "bg-surface-container-high",
     hoverBg: "",
   },
   {
     icon: "architecture",
     title: "Engineered to belong",
-    body: "Deep slate finish. Minimalist geometry. Seamless architectural integration.",
+    body: "Customized production for different site conditions. Removable and adjustable shelves. Adaptable to different brands and types of batteries.",
     bg: "bg-surface-container-low",
     hoverBg: "hover:bg-surface-container-high",
   },
@@ -243,12 +243,12 @@ function RiskSolution() {
             The IonGuard shield
           </h2>
           <p className="text-on-primary font-bold text-lg leading-relaxed max-w-md mb-8 relative z-10">
-            We encase risk in armor. Sensing anomalies in milliseconds.
-            Neutralizing threats before they escalate. Your assets, secured.
+            Explosion-proof cabinet and lock. Leakage and overload protection.
+            Automatic aerosol fire suppression. Real-time temperature monitoring. Your assets, secured.
           </p>
           <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest relative z-10">
             <span className="w-12 h-[1px] bg-on-primary" />
-            <span>Response Time: 0.004s</span>
+            <span>ISO9001 · ISO14001 · ISO45001 Certified</span>
           </div>
         </motion.div>
       </AnimatedSection>
@@ -409,20 +409,20 @@ function SolutionShowcase() {
 
 const techSpecs = [
   {
-    title: "Dual-layer thermal shielding",
-    body: "Composite honeycomb interior structures designed for maximum heat dissipation during critical events.",
+    title: "Explosion-proof construction",
+    body: "Explosion-proof cabinet with explosion-proof lock, leakage and overload protection for maximum safety in critical environments.",
   },
   {
-    title: "Microsecond system response",
-    body: "Edge-optimized sensor arrays polling at 100kHz for immediate anomaly detection and active mitigation.",
+    title: "Automatic fire suppression",
+    body: "Automatic aerosol fire extinguishing with aerosolized amine. High temperature alarm and automatic power-off to neutralize threats.",
   },
   {
-    title: "Asymmetric precision engineering",
-    body: "Structural chassis weighted for kinetic stability, ensuring containment even under explosive pressure shifts.",
+    title: "Intelligent charging management",
+    body: "Timed charging, power-off when fully charged, voice broadcast, and remote management via mobile phone and PC.",
   },
   {
-    title: "Modular Core Swap",
-    body: "Integrated rail systems allow for rapid hardware upgrades without replacing the monolithic chassis.",
+    title: "Customized solutions",
+    body: "Comprehensive customized production services adapted to different brands and types of batteries, solving charging safety issues.",
   },
 ];
 
@@ -436,12 +436,12 @@ function AuthoritySpecs() {
             Certified excellence
           </h2>
           <p className="text-on-surface-variant mb-12">
-            Every IonGuard unit undergoes stress testing exceeding UL and CE
-            standards by 200%. We don&apos;t just meet compliance; we define the
-            baseline.
+            Rigorously tested and globally certified. Our quality management
+            system ensures every detail meets international standards and
+            industry specifications.
           </p>
           <div className="space-y-4">
-            {["ISO 9001 PRECISION", "AEROSPACE GRADE SOURCING"].map(
+            {["ISO 9001 · ISO 14001 · ISO 45001", "CE & RoHS CERTIFIED"].map(
               (cert, i) => (
                 <div key={cert} className="flex items-center gap-4 group">
                   <div className="w-10 h-10 bg-surface-container-high flex items-center justify-center font-mono text-primary-container text-xs group-hover:bg-primary-container group-hover:text-on-primary transition-colors duration-300">
