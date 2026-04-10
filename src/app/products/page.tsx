@@ -164,82 +164,209 @@ interface Product {
 }
 
 const products: Product[] = [
-  // Generation 1
+  // ═══ GENERATION 1 (3 products) ═══
   {
-    id: "jah-010112",
-    name: "JAH-0101",
+    id: "jah-010104",
+    name: "JAH-010104",
     series: "Smart Generation One",
     generation: 1,
-    badge: "Base Entry",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDRN19N1_4O7KbyqnroMoMx30kHlMcG5Kv1x4JaKGwmJk28nZUqChvDQbVd0Vmd_mAU8HbH2PUybKTgCDvEbmLy01je3-lLEXfkxbIMTgKrzNRPFM8P0ZFz9QGkjFmh8OVPJetiLUCzw_0LD6B1PYtrfIrqePheWud3gjKstJfs_8yXUWx7MgX6tTTKrT9WQ6gPiqxgeoAlG6HTIaIHz5mbCCSgxaCx84xP-mNgcDbU3mMvSIg3p__8Vngjz7V-w2apqZEY9EU-8Gw",
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "4 Gallons" },
+      { label: "Shelves", value: "1 Piece" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["Explosion-proof cabinet & lock", "Leakage & overload protection", "Automatic ventilation"],
+  },
+  {
+    id: "jah-010112",
+    name: "JAH-010112",
+    series: "Smart Generation One",
+    generation: 1,
+    badge: "Standard",
+    image: "/images/JAH-010401 G.png",
     specs: [
       { label: "Volume", value: "12 Gallons" },
       { label: "Shelves", value: "1 Piece" },
-      { label: "Lock", value: "3-Point Linkage" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
     ],
-    features: ["Explosion-proof cabinet", "Automatic ventilation", "Leakage protection"],
+    features: ["Bull socket", "Removable & adjustable shelves", "Casters"],
   },
   {
     id: "jah-010115",
     name: "JAH-010115",
     series: "Smart Generation One",
     generation: 1,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBoi92z1Hd-yKlr2l5yJaDpbd7xLaKPIvHFfM0g6V5HUmuzaWUOMmOq526HrQeR1-E2bvJi-LmdUD00QnQ-qmj8EhnqW_MvAyZZTTRnDncTrqwk-COGM-Cb3ObBG0gfgK-3OO1kJXPkW3ACsvD5dQD04Q9PhKGDuUI1dXYB_b0LtG-iViKJmh079FX7Wmrl3z5J0Nl_zl_I3s77ASUiMRJhPW7e-qHcHPTm81fs71EUHW5Jp-26jRAvJAKHyPWaHFUwyXxbUIVVp34",
+    image: "/images/JAH-010401 G.png",
     specs: [
       { label: "Volume", value: "15 Gallons" },
       { label: "Shelves", value: "1 Piece" },
-      { label: "Lock", value: "3-Point Linkage" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
     ],
-    features: ["Bull socket", "Adjustable shelves", "Overload protection"],
+    features: ["Explosion-proof cabinet & lock", "Bull socket", "Adjustable shelves"],
   },
-  
-  // Generation 2
+
+  // ═══ GENERATION 2 (9 products) ═══
   {
-    id: "jah-01021",
-    name: "JAH-01021",
+    id: "jah-010215",
+    name: "JAH-010215",
+    series: "Smart Second Generation",
+    generation: 2,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "15 Gallons" },
+      { label: "Shelves", value: "1 Piece" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["High temperature alarm", "Aerosol fire suppression", "Real-time temp monitoring"],
+  },
+  {
+    id: "jah-010222-2s",
+    name: "JAH-010222",
     series: "Smart Second Generation",
     generation: 2,
     badge: "Popular",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCO3MRWG-PbMfvDduKIZu_MIwp9Y8AQHEuIQmLUbN0FYJJIyoYzLV1Pq3CDbGVKD0TeS4QiQXYCxZB4psv0-1BxznCQVgOGZ6SrjI-hyFY-Wo_XkAtdWeu7k_LiMYuN3Ism4zPGLG9TRDljgr16uPYiPM95EC2ULBS4gVRN76yfAAA1yVPWJpoZlbPIY0RQLspVSXVnvTY8Bkuhmx37S_6iM_jZKHSLF2rfOmsS92zXyLXeZ6KM_LwiTNAhAyGUcw8OnrTU3SynoTk",
+    image: "/images/JAH-010401 G.png",
     specs: [
-      { label: "Volume", value: "15 Gallons" },
-      { label: "Shelves", value: "1 Piece" },
-      { label: "Sensors", value: "Temp & Smoke" },
+      { label: "Volume", value: "22 Gallons" },
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
     ],
-    features: ["Aerosol fire suppression", "Real-time temp monitoring", "High temp alarm"],
+    features: ["High temp power-off", "Smoke alarm", "Real-time temp monitoring"],
+  },
+  {
+    id: "jah-010222-3s",
+    name: "JAH-010222",
+    series: "Smart Second Generation",
+    generation: 2,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "22 Gallons" },
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["High temperature alarm", "Aerosol fire suppression", "Adjustable shelves"],
+  },
+  {
+    id: "jah-010230",
+    name: "JAH-010230",
+    series: "Smart Second Generation",
+    generation: 2,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "30 Gallons" },
+      { label: "Shelves", value: "1 Piece" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["Smoke alarm", "Aerosol fire suppression", "Real-time temp monitoring"],
+  },
+  {
+    id: "jah-010245",
+    name: "JAH-010245",
+    series: "Smart Second Generation",
+    generation: 2,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "45 Gallons" },
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["High temp power-off", "Aerosol fire suppression", "Real-time temp monitoring"],
+  },
+  {
+    id: "jah-010245g",
+    name: "JAH-010245G",
+    series: "Smart Second Generation",
+    generation: 2,
+    badge: "Enhanced",
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "45 Gallons" },
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["High temperature alarm", "Smoke alarm", "Real-time temp monitoring"],
   },
   {
     id: "jah-010260",
     name: "JAH-010260",
     series: "Smart Second Generation",
     generation: 2,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCPsSxLooJpK6UcDwovs1KdEDzMmMxUZ2slA9CcCo61LR6zjo3I94x28OqJldNcsZamL0pfpW3zC_QAJpQwuyvHXsmpvYGZ7_o01EyysD2eeoGsar2GAE6enThcX19tsUkh3QYm3_graWHqYhCWZBwB1wscZnaZSDvEHmQRS1olj99jQXCYn7GvdJL-NLyQ07H9TxQP0luQCcZBMAT1eQ2PwaVM_jrGeMQIp6YydmauOBiIBHfymT_3CxoDt06sp_mJ3PQ0g5iqG9A",
+    image: "/images/JAH-010401 G.png",
     specs: [
       { label: "Volume", value: "60 Gallons" },
       { label: "Shelves", value: "2 Pieces" },
-      { label: "Suppression", value: "Aerosol" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
     ],
-    features: ["High temp power-off", "Real-time monitoring", "Adjustable shelves"],
+    features: ["High temp power-off", "Aerosol fire suppression", "Adjustable shelves"],
+  },
+  {
+    id: "jah-010290",
+    name: "JAH-010290",
+    series: "Smart Second Generation",
+    generation: 2,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "90 Gallons" },
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["High temperature alarm", "Smoke alarm", "Real-time temp monitoring"],
+  },
+  {
+    id: "jah-0102110",
+    name: "JAH-0102110",
+    series: "Smart Second Generation",
+    generation: 2,
+    badge: "High Capacity",
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Volume", value: "110 Gallons" },
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+    ],
+    features: ["Aerosol fire suppression", "High temp power-off", "Real-time temp monitoring"],
   },
 
-  // Generation 3
+  // ═══ GENERATION 3 (4 products) ═══
+  {
+    id: "jah-010302",
+    name: "JAH-010302",
+    series: "Smart Third Generation",
+    generation: 3,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+      { label: "Socket", value: "PDU Industrial" },
+    ],
+    features: ["Timed charging", "Voice broadcast", "Intelligent charging management"],
+  },
   {
     id: "jah-010303",
     name: "JAH-010303",
     series: "Smart Third Generation",
     generation: 3,
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD9oYuay1f4cDs1-nwsyxRZaJfPVYi4BsUi4fy8qoVlPFKFQk2uqNhX-Mk3EAvJuvoUd_GcPLj4I3zbnlaAO8O6OJCTVS5ZKjG98PLKoUUVLiadPcTZ298KN0u4HQ534LTBNlqU8jteINXrhQCraUCqrW-z3ql5631faEZSKp-20wPZ3VIEf6O0JrgZTN5_PczK08xLkIEGViAwiYOrWUH4IdQQqAchwJEcOuhcldTiymWSizKX-PBBhAS1Oc065_MX0XVHQS5eRRQ",
+    image: "/images/JAH-010401 G.png",
     specs: [
-      { label: "Shelves", value: "2 Pieces" },
-      { label: "Lock", value: "3-Point Linkage" },
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
       { label: "Socket", value: "PDU Industrial" },
     ],
-    features: ["Intelligent charging management", "Timed charging", "Voice broadcast"],
+    features: ["Aerosolized amine extinguishing", "Power-off when fully charged", "Voice broadcast"],
+  },
+  {
+    id: "jah-010301",
+    name: "JAH-010301",
+    series: "Smart Third Generation",
+    generation: 3,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
+      { label: "Socket", value: "PDU Industrial" },
+    ],
+    features: ["Intelligent charging management", "Timed charging", "High temp alarm"],
   },
   {
     id: "jah-010301g",
@@ -247,47 +374,121 @@ const products: Product[] = [
     series: "Smart Third Generation",
     generation: 3,
     badge: "Advanced",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDRN19N1_4O7KbyqnroMoMx30kHlMcG5Kv1x4JaKGwmJk28nZUqChvDQbVd0Vmd_mAU8HbH2PUybKTgCDvEbmLy01je3-lLEXfkxbIMTgKrzNRPFM8P0ZFz9QGkjFmh8OVPJetiLUCzw_0LD6B1PYtrfIrqePheWud3gjKstJfs_8yXUWx7MgX6tTTKrT9WQ6gPiqxgeoAlG6HTIaIHz5mbCCSgxaCx84xP-mNgcDbU3mMvSIg3p__8Vngjz7V-w2apqZEY9EU-8Gw",
+    image: "/images/JAH-010401 G.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
-      { label: "Lock", value: "3-Point Linkage" },
+      { label: "Lock", value: "3-Point Linkage Double Lock" },
       { label: "Extinguishing", value: "Aerosolized Amine" },
     ],
     features: ["Power-off when fully charged", "Intelligent management", "PDU industrial socket"],
   },
 
-  // Generation 4
+  // ═══ GENERATION 4 (8 products) ═══
+  {
+    id: "jah-0104-std-a",
+    name: "Gen4 Standard A",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Dimensions", value: "1780 × 600 × 520 mm" },
+    ],
+    features: ["Timed charging", "Aerosol fire extinguishing", "Voice broadcast"],
+  },
+  {
+    id: "jah-0104-std-b",
+    name: "Gen4 Standard B",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Dimensions", value: "1780 × 600 × 520 mm" },
+    ],
+    features: ["PDU industrial socket", "Power-off when fully charged", "Adjustable shelves"],
+  },
+  {
+    id: "jah-0104-std-c",
+    name: "Gen4 Standard C",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "2 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Dimensions", value: "1280 × 1100 × 520 mm" },
+    ],
+    features: ["Timed charging", "Aerosol fire extinguishing", "Voice broadcast"],
+  },
+  {
+    id: "jah-0104-std-d",
+    name: "Gen4 Standard D",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Dimensions", value: "1280 × 1100 × 520 mm" },
+    ],
+    features: ["PDU industrial socket", "Power-off when fully charged", "Adjustable shelves"],
+  },
   {
     id: "jah-010403",
     name: "JAH-010403",
     series: "Smart Fourth Generation",
     generation: 4,
-    badge: "Flagship",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDRN19N1_4O7KbyqnroMoMx30kHlMcG5Kv1x4JaKGwmJk28nZUqChvDQbVd0Vmd_mAU8HbH2PUybKTgCDvEbmLy01je3-lLEXfkxbIMTgKrzNRPFM8P0ZFz9QGkjFmh8OVPJetiLUCzw_0LD6B1PYtrfIrqePheWud3gjKstJfs_8yXUWx7MgX6tTTKrT9WQ6gPiqxgeoAlG6HTIaIHz5mbCCSgxaCx84xP-mNgcDbU3mMvSIg3p__8Vngjz7V-w2apqZEY9EU-8Gw",
+    image: "/images/JAH-010401 G.png",
     specs: [
       { label: "Shelves", value: "2 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
-      { label: "Management", value: "Remote via Mobile/PC" },
+      { label: "Dimensions", value: "1280 × 600 × 520 mm" },
     ],
-    features: ["Remote management via PC", "Smart flow routing", "Aerosol fire extinguishing"],
+    features: ["Intelligent charging management", "Remote management via mobile & PC", "Voice broadcast"],
+  },
+  {
+    id: "jah-010402",
+    name: "JAH-010402",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Dimensions", value: "1280 × 600 × 520 mm" },
+    ],
+    features: ["Intelligent charging management", "Remote management via mobile & PC", "Aerosol fire extinguishing"],
+  },
+  {
+    id: "jah-010401",
+    name: "JAH-010401",
+    series: "Smart Fourth Generation",
+    generation: 4,
+    image: "/images/JAH-010401 G.png",
+    specs: [
+      { label: "Shelves", value: "3 Pieces" },
+      { label: "Locks", value: "Top & Bottom" },
+      { label: "Dimensions", value: "1780 × 1100 × 520 mm" },
+    ],
+    features: ["Intelligent charging management", "Remote management via mobile & PC", "Voice broadcast"],
   },
   {
     id: "jah-010401g",
     name: "JAH-010401G",
     series: "Smart Fourth Generation",
     generation: 4,
-    badge: "Enterprise",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCPsSxLooJpK6UcDwovs1KdEDzMmMxUZ2slA9CcCo61LR6zjo3I94x28OqJldNcsZamL0pfpW3zC_QAJpQwuyvHXsmpvYGZ7_o01EyysD2eeoGsar2GAE6enThcX19tsUkh3QYm3_graWHqYhCWZBwB1wscZnaZSDvEHmQRS1olj99jQXCYn7GvdJL-NLyQ07H9TxQP0luQCcZBMAT1eQ2PwaVM_jrGeMQIp6YydmauOBiIBHfymT_3CxoDt06sp_mJ3PQ0g5iqG9A",
+    badge: "Flagship",
+    image: "/images/JAH-010401 G.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
-      { label: "Management", value: "Remote via Mobile/PC" },
+      { label: "Dimensions", value: "1780 × 1100 × 520 mm" },
     ],
-    features: ["Intelligent active cooling", "Multi-layer isolation", "Voice broadcast API"],
-  }
+    features: ["Intelligent charging management", "Remote management via mobile & PC", "Aerosol fire extinguishing"],
+  },
 ];
 
 function ProductGrid() {
@@ -348,12 +549,12 @@ function ProductGrid() {
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
               >
-                {/* Product Image */}
-                <div className="relative h-52 overflow-hidden">
+                {/* Product Image — same config as Featured Product */}
+                <div className="relative h-60 bg-surface-container-high overflow-hidden p-6">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700"
+                    className="w-full h-full object-contain contrast-125 opacity-90 group-hover:opacity-100 transition-all duration-700"
                   />
                   {product.badge && (
                     <div className="absolute top-3 left-3 bg-primary-container text-on-primary px-3 py-1 text-[9px] font-label font-bold tracking-widest uppercase">
