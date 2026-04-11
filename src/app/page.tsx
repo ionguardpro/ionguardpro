@@ -165,7 +165,7 @@ function TripleCrown() {
         {valueProps.map((prop) => (
           <StaggerItem key={prop.title}>
             <div
-              className={`${prop.bg} ${prop.hoverBg} p-10 md:p-12 transition-colors duration-500 min-h-[360px] md:min-h-[400px] flex flex-col justify-between group`}
+              className={`${prop.bg} ${prop.hoverBg} p-10 md:p-12 transition-colors duration-500 min-h-[250px] md:min-h-[250px] flex flex-col justify-between group`}
             >
               <div>
                 <span
