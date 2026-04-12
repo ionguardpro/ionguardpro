@@ -18,7 +18,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand Column */}
           <div className="md:col-span-1">
-            <div className="font-black text-primary-container uppercase tracking-tighter text-xl mb-6 font-headline">
+            <div className="flex items-center gap-3 font-black text-primary-container uppercase tracking-tighter text-xl mb-6 font-headline">
+              <img 
+                src="/logoSmartCabinet.png" 
+                alt="IonGuard Pro Logo" 
+                className="h-14 md:h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,221,0,0.2)]" 
+              />
               IONGUARD PRO
             </div>
             <p className="font-mono text-xs uppercase tracking-[0.15em] text-neutral-400 max-w-xs leading-relaxed">

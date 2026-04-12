@@ -26,6 +26,10 @@ export const metadata: Metadata = {
       "Industrial-grade smart charging cabinets with advanced thermal runaway isolation and intelligent power management.",
     type: "website",
   },
+  icons: {
+    icon: "/faviconSmartCharger.png",
+    apple: "/faviconSmartCharger.png",
+  },
 };
 
 export default function RootLayout({

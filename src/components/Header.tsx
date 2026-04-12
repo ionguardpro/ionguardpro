@@ -33,12 +33,17 @@ export function Header() {
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? "h-14 bg-neutral-950/95 backdrop-blur-xl shadow-2xl"
-            : "h-20 bg-neutral-950/80 backdrop-blur-md"
+            ? "h-20 bg-neutral-950/95 backdrop-blur-xl shadow-2xl"
+            : "h-28 bg-neutral-950/80 backdrop-blur-md"
         } border-b border-white/5 flex justify-between items-center px-6 md:px-12`}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-3 group">
+          <img 
+            src="/logoSmartCabinet.png" 
+            alt="IonGuard Pro Logo" 
+            className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,221,0,0.2)]" 
+          />
           <span className="text-xl md:text-2xl font-black tracking-tighter uppercase text-primary-container font-headline transition-all duration-300 group-hover:text-primary-fixed">
             IONGUARD PRO
           </span>
