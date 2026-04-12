@@ -10,17 +10,33 @@ export function ChatbotWidget() {
   return (
     <>
       {/* FAB Button */}
+      {/* FAB Button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary-container text-on-primary rounded-[4px] flex items-center justify-center shadow-2xl hover:bg-primary-fixed-dim active:scale-95 transition-all duration-200"
+        layout
+        className={`fixed bottom-6 right-6 z-50 h-14 bg-primary-container text-on-primary rounded-[4px] flex items-center justify-center shadow-2xl hover:bg-primary-fixed-dim active:scale-95 transition-all duration-300 ${
+          isOpen ? "w-14" : "px-6"
+        }`}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Toggle chat"
       >
+        <AnimatePresence>
+          {!isOpen && (
+            <motion.span
+              initial={{ opacity: 0, width: 0, marginRight: 0 }}
+              animate={{ opacity: 1, width: "auto", marginRight: 12 }}
+              exit={{ opacity: 0, width: 0, marginRight: 0 }}
+              className="font-headline text-sm font-black tracking-widest uppercase whitespace-nowrap overflow-hidden"
+            >
+              Chat With Us
+            </motion.span>
+          )}
+        </AnimatePresence>
         <motion.span
           animate={{ rotate: isOpen ? 90 : 0 }}
           transition={{ duration: 0.2 }}
-          className="material-symbols-outlined text-2xl"
+          className="material-symbols-outlined text-2xl flex-shrink-0"
           style={{ fontVariationSettings: "'FILL' 1" }}
         >
           {isOpen ? "close" : "chat"}

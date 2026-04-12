@@ -81,18 +81,18 @@ function ContactHero() {
 function ContactInfo() {
   return (
     <div className="lg:col-span-5 flex flex-col gap-8">
-      <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {/* Technical Support */}
+      <StaggerContainer className="grid grid-cols-1 gap-6">
+        {/* Sales Inquiries */}
         <StaggerItem>
           <div className="bg-surface-container-low p-8 border-l-4 border-primary-container h-full">
             <h3 className="font-label text-[10px] tracking-[0.2em] uppercase text-outline mb-4">
-              Technical Support
+              Sales Inquiries
             </h3>
             <p className="font-mono text-lg text-on-surface mb-2">
-              0x800-ION-TECH
+              +64 27 668 3669
             </p>
             <p className="text-sm text-secondary font-light mb-6">
-              support@ionguard.pro
+              contact@ionguardpro.com
             </p>
             <div className="flex items-center gap-2 text-[10px] font-mono text-primary-fixed-dim">
               <span className="relative flex h-2 w-2">
@@ -105,22 +105,7 @@ function ContactInfo() {
         </StaggerItem>
 
         {/* Sales Inquiries */}
-        <StaggerItem>
-          <div className="bg-surface-container-low p-8 border-l-4 border-secondary h-full">
-            <h3 className="font-label text-[10px] tracking-[0.2em] uppercase text-outline mb-4">
-              Sales Inquiries
-            </h3>
-            <p className="font-mono text-lg text-on-surface mb-2">
-              +1 415-555-0192
-            </p>
-            <p className="text-sm text-secondary font-light mb-6">
-              deploy@ionguard.pro
-            </p>
-            <div className="flex items-center gap-2 text-[10px] font-mono text-secondary">
-              M-F: 0800 – 1800 PST
-            </div>
-          </div>
-        </StaggerItem>
+
       </StaggerContainer>
 
       {/* Why IonGuard */}
@@ -156,13 +141,12 @@ function ContactInfo() {
 
       {/* Hardware image */}
       <AnimatedSection delay={0.3}>
-        <div className="relative h-48 overflow-hidden grayscale opacity-30 hover:grayscale-0 hover:opacity-100 transition-all duration-700 hidden lg:block">
+        <div className="relative h-64 overflow-hidden bg-surface-container-high p-6 hidden lg:block border border-outline-variant/5">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyZI_9E-KAw_HEfAKwDPjcR7gyYEs28wMWAxi8NYCB5IORdRkWDT_gtWrekMDZjc-nAHA1wuAQt4DTDVeY3hvVhIQOmxlE8_blfNWQmDe6txo-6lHTlUgA1nn-l7UkIVZx3KaDJaCo0d1TncQXDDt4dFwsqzL72f2GkFAkaCYw1xadkCEqq8NcqQNi_4p1B09-UaauSsBRWr43pJTFgAWjYnyDYrpxfKFi3Es8OdRONFvXUK5W5IkLG6n1hpHf4Vj1aUTKPJB5-6A"
-            alt="IonGuard precision hardware"
-            className="object-cover w-full h-full"
+            src="/images/JAH-010401G.png"
+            alt="IonGuard Smart Charging Cabinet Flagship"
+            className="object-contain w-full h-full contrast-125"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
         </div>
       </AnimatedSection>
     </div>
@@ -270,7 +254,7 @@ function ContactForm({
 
             {/* Message */}
             <div className="group">
-              <label className={labelClass}>Data Payload (Message)</label>
+              <label className={labelClass}>Message</label>
               <textarea
                 placeholder="Describe your technical requirements or inquiry..."
                 rows={5}
@@ -281,26 +265,19 @@ function ContactForm({
             </div>
 
             {/* Submit */}
-            <div className="pt-4 flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex gap-3 items-center">
-                <div className="w-10 h-[1px] bg-outline-variant" />
-                <p className="font-mono text-[10px] text-outline-variant uppercase tracking-widest">
-                  Secure End-to-End Transmission
-                </p>
-              </div>
-
+            <div className="pt-4 flex flex-col items-center">
               <motion.button
                 type="submit"
-                whileHover={{ x: 4 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.97 }}
-                className="w-full md:w-auto bg-primary-container text-on-primary px-10 py-5 text-sm font-black tracking-[0.2em] uppercase hover:bg-primary-fixed-dim transition-colors duration-300 flex items-center justify-center gap-3"
+                className="w-full bg-primary-container text-on-primary px-10 py-5 text-sm font-black tracking-[0.2em] uppercase hover:bg-primary-fixed-dim transition-all duration-300 flex items-center justify-center gap-3"
               >
                 {submitted ? (
                   <>
                     <span className="material-symbols-outlined text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>
                       check_circle
                     </span>
-                    Transmitted
+                    Message Sent
                   </>
                 ) : (
                   <>
@@ -321,28 +298,45 @@ function ContactForm({
    NETWORK STATUS BAR
    ───────────────────────────────────── */
 const statusItems = [
-  { label: "Latency", value: "12ms" },
-  { label: "Uptime", value: "99.999%" },
-  { label: "Encryption", value: "AES-512" },
-  { label: "Satellite", value: "Linked" },
+  { label: "Fire Protection", value: "Aerosol System Active" },
+  { label: "Charging Core", value: "Intelligent Mgmt" },
+  { label: "Monitoring", value: "Real-time Telemetry" },
+  { label: "Compliance", value: "ISO 9001 Certified" },
 ];
 
 function NetworkStatus() {
   return (
     <AnimatedSection delay={0.2}>
       <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-        {statusItems.map((item) => (
-          <div
+        {statusItems.map((item, i) => (
+          <motion.div
             key={item.label}
-            className="bg-surface-container-low p-4 border border-outline-variant/5 hover:border-primary-container/20 transition-colors duration-300"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.1 }}
+            className="bg-surface-container-low p-4 border border-outline-variant/5 hover:border-primary-container/40 hover:bg-surface-container-high transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[90px]"
           >
-            <p className="font-label text-[9px] text-outline uppercase mb-2">
-              {item.label}
-            </p>
-            <p className="font-mono text-primary-container text-sm font-bold">
+            {/* Animated Progress Accent */}
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "100%" }}
+              transition={{ duration: 0.8, delay: 0.3 + (i * 0.1) }}
+              className="absolute top-0 left-0 h-[2px] bg-primary-container opacity-50 group-hover:opacity-100 transition-opacity"
+            />
+            <div className="flex items-center justify-between mb-2">
+              <p className="font-label text-[9px] text-outline uppercase tracking-widest">
+                {item.label}
+              </p>
+              <span className="relative flex h-2 w-2 group-hover:scale-125 transition-transform duration-300">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-60" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-container" />
+              </span>
+            </div>
+            <p className="font-mono text-primary-container text-xs font-bold leading-tight">
               {item.value}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </AnimatedSection>

@@ -117,12 +117,7 @@ function Manifesto() {
             >
               Explore IonGuard Pro
             </Link>
-            <Link
-              href="/products"
-              className="ghost-border text-on-surface font-label uppercase text-xs px-8 py-5 hover:bg-surface-container-high transition-all duration-300 inline-block"
-            >
-              Technical Specs
-            </Link>
+
           </div>
         </AnimatedSection>
       </div>
@@ -262,46 +257,56 @@ function RiskSolution() {
 
 const solutions = [
   {
-    id: "residential",
-    label: "Residential",
-    variant: "Variant R-01",
-    title: "Home Integration",
+    id: "gen1",
+    label: "Generation 1",
+    variant: "Smart Generation One",
+    title: "Essential Security",
     description:
-      "The R-01 brings industrial safety to the modern garage. Designed to integrate seamlessly with smart home ecosystems, providing peace of mind without compromising aesthetic harmony.",
+      "Explosion-proof cabinet with leakage and overload protection. Includes automatic ventilation and adjustable shelves for foundational safety.",
     specs: [
-      { label: "Max Capacity", value: "12.5 kWh" },
-      { label: "Footprint", value: "0.42 m²" },
+      { label: "Capacity", value: "4-15 gal" },
+      { label: "Lock System", value: "3-point linkage double lock" },
     ],
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBoi92z1Hd-yKlr2l5yJaDpbd7xLaKPIvHFfM0g6V5HUmuzaWUOMmOq526HrQeR1-E2bvJi-LmdUD00QnQ-qmj8EhnqW_MvAyZZTTRnDncTrqwk-COGM-Cb3ObBG0gfgK-3OO1kJXPkW3ACsvD5dQD04Q9PhKGDuUI1dXYB_b0LtG-iViKJmh079FX7Wmrl3z5J0Nl_zl_I3s77ASUiMRJhPW7e-qHcHPTm81fs71EUHW5Jp-26jRAvJAKHyPWaHFUwyXxbUIVVp34",
+    image: "/images/JAH-010115.png",
   },
   {
-    id: "commercial",
-    label: "Commercial",
-    variant: "Variant C-02",
-    title: "Enterprise Infrastructure",
+    id: "gen2",
+    label: "Generation 2",
+    variant: "Smart Second Generation",
+    title: "Active Suppression",
     description:
-      "The C-02 powers corporate campuses and fleet operations. High-capacity charging networks designed for mission-critical uptime and centralized energy management.",
+      "Advanced protection featuring real-time temperature monitoring, automatic high temperature power-off, and automatic aerosol fire suppression.",
     specs: [
-      { label: "Max Capacity", value: "48 kWh" },
-      { label: "Footprint", value: "1.2 m²" },
+      { label: "Capacity", value: "15-110 gal" },
+      { label: "Suppression", value: "Automatic Aerosol" },
     ],
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDRN19N1_4O7KbyqnroMoMx30kHlMcG5Kv1x4JaKGwmJk28nZUqChvDQbVd0Vmd_mAU8HbH2PUybKTgCDvEbmLy01je3-lLEXfkxbIMTgKrzNRPFM8P0ZFz9QGkjFmh8OVPJetiLUCzw_0LD6B1PYtrfIrqePheWud3gjKstJfs_8yXUWx7MgX6tTTKrT9WQ6gPiqxgeoAlG6HTIaIHz5mbCCSgxaCx84xP-mNgcDbU3mMvSIg3p__8Vngjz7V-w2apqZEY9EU-8Gw",
+    image: "/images/JAH-010245G.png",
   },
   {
-    id: "industrial",
-    label: "Industrial",
-    variant: "Variant I-03",
-    title: "Extreme Containment",
+    id: "gen3",
+    label: "Generation 3",
+    variant: "Smart Third Generation",
+    title: "Intelligent Operations",
     description:
-      "The I-03 is ruggedized for the most demanding environments. Engineered for extreme thermal events, chemical exposure, and continuous high-load operations.",
+      "Integrated system featuring aerosolized amine fire extinguishing, timed charging with automatic power-off, and intelligent charging management.",
     specs: [
-      { label: "Max Capacity", value: "120 kWh" },
-      { label: "Footprint", value: "3.8 m²" },
+      { label: "Extinguishing", value: "Aerosolized Amine" },
+      { label: "Charging", value: "Timed & Auto Power-Off" },
     ],
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCO3MRWG-PbMfvDduKIZu_MIwp9Y8AQHEuIQmLUbN0FYJJIyoYzLV1Pq3CDbGVKD0TeS4QiQXYCxZB4psv0-1BxznCQVgOGZ6SrjI-hyFY-Wo_XkAtdWeu7k_LiMYuN3Ism4zPGLG9TRDljgr16uPYiPM95EC2ULBS4gVRN76yfAAA1yVPWJpoZlbPIY0RQLspVSXVnvTY8Bkuhmx37S_6iM_jZKHSLF2rfOmsS92zXyLXeZ6KM_LwiTNAhAyGUcw8OnrTU3SynoTk",
+    image: "/images/JAH-010301G.png",
+  },
+  {
+    id: "gen4",
+    label: "Generation 4",
+    variant: "Flagship Generation 4",
+    title: "Connected Infrastructure",
+    description:
+      "The pinnacle of smart charging safety. Enterprise-grade containment with comprehensive remote management and monitoring via mobile and PC platforms.",
+    specs: [
+      { label: "Management", value: "Remote Mobile & PC" },
+      { label: "Security", value: "Top and Bottom Locks" },
+    ],
+    image: "/images/JAH-010401G.png",
   },
 ];
 
@@ -314,7 +319,7 @@ function SolutionShowcase() {
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
           <h2 className="text-xs font-label uppercase tracking-[0.4em] text-primary-container mb-12">
-            Scaled to your vision
+            Product Generations
           </h2>
         </AnimatedSection>
 
@@ -387,11 +392,11 @@ function SolutionShowcase() {
                 </div>
 
                 {/* Image */}
-                <div className="flex-1 min-h-[250px] md:min-h-0">
+                <div className="flex-1 min-h-[250px] md:min-h-0 bg-surface-container-high p-8 flex items-center justify-center">
                   <img
                     src={active.image}
                     alt={active.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain contrast-125 transition-transform duration-500 hover:scale-105"
                   />
                 </div>
               </motion.div>

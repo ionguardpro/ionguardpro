@@ -170,7 +170,7 @@ const products: Product[] = [
     name: "JAH-010104",
     series: "Smart Generation One",
     generation: 1,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-01014.png",
     specs: [
       { label: "Volume", value: "4 Gallons" },
       { label: "Shelves", value: "1 Piece" },
@@ -184,7 +184,7 @@ const products: Product[] = [
     series: "Smart Generation One",
     generation: 1,
     badge: "Standard",
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010112.png",
     specs: [
       { label: "Volume", value: "12 Gallons" },
       { label: "Shelves", value: "1 Piece" },
@@ -197,7 +197,7 @@ const products: Product[] = [
     name: "JAH-010115",
     series: "Smart Generation One",
     generation: 1,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010115.png",
     specs: [
       { label: "Volume", value: "15 Gallons" },
       { label: "Shelves", value: "1 Piece" },
@@ -212,7 +212,7 @@ const products: Product[] = [
     name: "JAH-010215",
     series: "Smart Second Generation",
     generation: 2,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010215.png",
     specs: [
       { label: "Volume", value: "15 Gallons" },
       { label: "Shelves", value: "1 Piece" },
@@ -222,11 +222,11 @@ const products: Product[] = [
   },
   {
     id: "jah-010222-2s",
-    name: "JAH-010222",
+    name: "JAH-0102223",
     series: "Smart Second Generation",
     generation: 2,
     badge: "Popular",
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-0102223.png",
     specs: [
       { label: "Volume", value: "22 Gallons" },
       { label: "Shelves", value: "2 Pieces" },
@@ -236,10 +236,10 @@ const products: Product[] = [
   },
   {
     id: "jah-010222-3s",
-    name: "JAH-010222",
+    name: "JAH-0102224",
     series: "Smart Second Generation",
     generation: 2,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-0102224.png",
     specs: [
       { label: "Volume", value: "22 Gallons" },
       { label: "Shelves", value: "3 Pieces" },
@@ -252,7 +252,7 @@ const products: Product[] = [
     name: "JAH-010230",
     series: "Smart Second Generation",
     generation: 2,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010230.png",
     specs: [
       { label: "Volume", value: "30 Gallons" },
       { label: "Shelves", value: "1 Piece" },
@@ -265,7 +265,7 @@ const products: Product[] = [
     name: "JAH-010245",
     series: "Smart Second Generation",
     generation: 2,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010245.png",
     specs: [
       { label: "Volume", value: "45 Gallons" },
       { label: "Shelves", value: "2 Pieces" },
@@ -279,7 +279,7 @@ const products: Product[] = [
     series: "Smart Second Generation",
     generation: 2,
     badge: "Enhanced",
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010245G.png",
     specs: [
       { label: "Volume", value: "45 Gallons" },
       { label: "Shelves", value: "2 Pieces" },
@@ -292,7 +292,7 @@ const products: Product[] = [
     name: "JAH-010260",
     series: "Smart Second Generation",
     generation: 2,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010260.png",
     specs: [
       { label: "Volume", value: "60 Gallons" },
       { label: "Shelves", value: "2 Pieces" },
@@ -305,7 +305,7 @@ const products: Product[] = [
     name: "JAH-010290",
     series: "Smart Second Generation",
     generation: 2,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010290.png",
     specs: [
       { label: "Volume", value: "90 Gallons" },
       { label: "Shelves", value: "2 Pieces" },
@@ -319,7 +319,7 @@ const products: Product[] = [
     series: "Smart Second Generation",
     generation: 2,
     badge: "High Capacity",
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-0102110.png",
     specs: [
       { label: "Volume", value: "110 Gallons" },
       { label: "Shelves", value: "2 Pieces" },
@@ -334,7 +334,7 @@ const products: Product[] = [
     name: "JAH-010302",
     series: "Smart Third Generation",
     generation: 3,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010302.png",
     specs: [
       { label: "Shelves", value: "2 Pieces" },
       { label: "Lock", value: "3-Point Linkage Double Lock" },
@@ -347,7 +347,7 @@ const products: Product[] = [
     name: "JAH-010303",
     series: "Smart Third Generation",
     generation: 3,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010303.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Lock", value: "3-Point Linkage Double Lock" },
@@ -360,7 +360,7 @@ const products: Product[] = [
     name: "JAH-010301",
     series: "Smart Third Generation",
     generation: 3,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010301.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Lock", value: "3-Point Linkage Double Lock" },
@@ -374,7 +374,7 @@ const products: Product[] = [
     series: "Smart Third Generation",
     generation: 3,
     badge: "Advanced",
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010301G.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Lock", value: "3-Point Linkage Double Lock" },
@@ -389,7 +389,7 @@ const products: Product[] = [
     name: "Gen4 Standard A",
     series: "Smart Fourth Generation",
     generation: 4,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/GEN4 STANDARD A.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -402,7 +402,7 @@ const products: Product[] = [
     name: "Gen4 Standard B",
     series: "Smart Fourth Generation",
     generation: 4,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/GEN4 STANDARD B.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -415,7 +415,7 @@ const products: Product[] = [
     name: "Gen4 Standard C",
     series: "Smart Fourth Generation",
     generation: 4,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/GEN4 STANDARD C.png",
     specs: [
       { label: "Shelves", value: "2 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -428,7 +428,7 @@ const products: Product[] = [
     name: "Gen4 Standard D",
     series: "Smart Fourth Generation",
     generation: 4,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/GEN4 STANDARD D.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -441,7 +441,7 @@ const products: Product[] = [
     name: "JAH-010403",
     series: "Smart Fourth Generation",
     generation: 4,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010403.png",
     specs: [
       { label: "Shelves", value: "2 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -454,7 +454,7 @@ const products: Product[] = [
     name: "JAH-010402",
     series: "Smart Fourth Generation",
     generation: 4,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010402.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -467,7 +467,7 @@ const products: Product[] = [
     name: "JAH-010401",
     series: "Smart Fourth Generation",
     generation: 4,
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010401.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -481,7 +481,7 @@ const products: Product[] = [
     series: "Smart Fourth Generation",
     generation: 4,
     badge: "Flagship",
-    image: "/images/JAH-010401 G.png",
+    image: "/images/JAH-010401G.png",
     specs: [
       { label: "Shelves", value: "3 Pieces" },
       { label: "Locks", value: "Top & Bottom" },
@@ -624,7 +624,7 @@ function ProductGrid() {
                   </ul>
 
                   {/* CTA */}
-                  <button className="mt-auto w-full py-3 bg-surface-container-highest font-label font-bold text-[10px] tracking-widest uppercase hover:bg-primary-container hover:text-on-primary transition-colors duration-300 active:scale-[0.98]">
+                  <button className="mt-auto w-full py-3 bg-primary-container text-on-primary font-label font-bold text-[10px] tracking-widest uppercase hover:opacity-90 transition-all duration-300 active:scale-[0.98]">
                     Technical Datasheet
                   </button>
                 </div>
@@ -675,19 +675,54 @@ function ProtectionStandards() {
               </div>
             </div>
 
-            {/* Decorative Binary Block */}
-            <div className="w-full lg:w-64 h-64 bg-surface-container-high border-r-8 border-primary-container flex items-center justify-center p-4 overflow-hidden">
-              <motion.span
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 0.4 }}
-                transition={{ duration: 1 }}
-                className="font-mono text-[10px] text-on-surface-variant leading-none break-all"
+            {/* Certification Badges */}
+            <div className="w-full lg:w-64 h-64 bg-surface-container-high border-r-8 border-primary-container relative flex items-center justify-center overflow-hidden group">
+              <div className="absolute inset-0 dot-grid-bg opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: { staggerChildren: 0.2 },
+                  },
+                }}
+                className="flex flex-col items-center gap-4 relative z-10"
               >
-                01010111 01000101 00100000 01000010 01010101 01001001 01001100
-                01000100 00100000 01010100 01001000 01000101 00100000 01000110
-                01010101 01010100 01010101 01010010 01000101 00100000 01010111
-                01000101 00100000 01000010 01010101 01001001 01001100 01000100
-              </motion.span>
+                <motion.span
+                  variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="font-headline font-black text-4xl text-primary-container uppercase tracking-widest drop-shadow-lg"
+                >
+                  ISO
+                </motion.span>
+                <motion.div
+                  variants={{ hidden: { scaleX: 0 }, visible: { scaleX: 1 } }}
+                  transition={{ duration: 0.5 }}
+                  className="w-12 h-1 bg-primary-container/40"
+                ></motion.div>
+                <motion.span
+                  variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="font-headline font-black text-4xl text-primary-container uppercase tracking-widest drop-shadow-lg"
+                >
+                  CE
+                </motion.span>
+                <motion.div
+                  variants={{ hidden: { scaleX: 0 }, visible: { scaleX: 1 } }}
+                  transition={{ duration: 0.5 }}
+                  className="w-12 h-1 bg-primary-container/40"
+                ></motion.div>
+                <motion.span
+                  variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="font-headline font-black text-4xl text-primary-container uppercase tracking-widest drop-shadow-lg"
+                >
+                  RoHS
+                </motion.span>
+              </motion.div>
             </div>
           </div>
         </AnimatedSection>
