@@ -6,7 +6,7 @@ import { ChatbotWidget } from "@/components/ChatbotWidget";
 
 export const metadata: Metadata = {
   title: {
-    default: "IonGuard Pro | Intelligent. Secure. Sustainable.",
+    default: "IonGuard Pro | Smart Charging Cabinet",
     template: "%s | IonGuard Pro",
   },
   description:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "industrial safety",
   ],
   openGraph: {
-    title: "IonGuard Pro | Intelligent. Secure. Sustainable.",
+    title: "IonGuard Pro | Smart Charging Cabinet",
     description:
       "Industrial-grade smart charging cabinets with advanced thermal runaway isolation and intelligent power management.",
     type: "website",

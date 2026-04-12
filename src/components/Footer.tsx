@@ -75,7 +75,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="font-label text-xs uppercase tracking-[0.2em] text-neutral-400 text-center md:text-left">
-            Intelligent. Secure. Sustainable.
+            Smart Charging Cabinet
           </p>
           
           <p className="font-mono text-xs uppercase tracking-[0.1em] text-neutral-500 text-center">
