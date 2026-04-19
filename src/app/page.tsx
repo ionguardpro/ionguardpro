@@ -259,7 +259,7 @@ const liabilityCards = [
   {
     icon: "gavel",
     label: "Reasonable Care Clause",
-    title: "Your insurer can deny your claim.",
+    title: "Your claim could be denied for recklessness.",
     body: "Insurance policies contain \"Reasonable Care\" clauses. If you suffer a loss from a lithium battery fire without taking prior steps to mitigate the risk, your insurer may classify the event as \"reckless\" and decline your claim. There is already precedent for this occurring in New Zealand.",
   },
   {
