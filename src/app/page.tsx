@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import {
   AnimatedSection,
@@ -20,7 +20,7 @@ export default function HomePage() {
       <Manifesto />
       <TripleCrown />
       <RiskSolution />
-      <SolutionShowcase />
+      <InsuranceWarning />
       <AuthoritySpecs />
       <CTASection />
     </>
@@ -252,157 +252,202 @@ function RiskSolution() {
 }
 
 /* ─────────────────────────────────────
-   5. SOLUTION SHOWCASE (Interactive Tabs)
+   5. INSURANCE & LIABILITY WARNING
    ───────────────────────────────────── */
 
-const solutions = [
+const liabilityCards = [
   {
-    id: "gen1",
-    label: "Generation 1",
-    variant: "Smart Generation One",
-    title: "Essential Security",
-    description:
-      "Explosion-proof cabinet with leakage and overload protection. Includes automatic ventilation and adjustable shelves for foundational safety.",
-    specs: [
-      { label: "Capacity", value: "4-15 gal" },
-      { label: "Lock System", value: "3-point linkage double lock" },
-    ],
-    image: "/images/JAH-010115.png",
+    icon: "gavel",
+    label: "Reasonable Care Clause",
+    title: "Your insurer can deny your claim.",
+    body: "Insurance policies contain \"Reasonable Care\" clauses. If a lithium battery fire starts because you charged on a flammable surface—a carpet, a wooden shelf, a couch—your insurer may classify it as recklessness and decline your claim entirely.",
   },
   {
-    id: "gen2",
-    label: "Generation 2",
-    variant: "Smart Second Generation",
-    title: "Active Suppression",
-    description:
-      "Advanced protection featuring real-time temperature monitoring, automatic high temperature power-off, and automatic aerosol fire suppression.",
-    specs: [
-      { label: "Capacity", value: "15-110 gal" },
-      { label: "Suppression", value: "Automatic Aerosol" },
-    ],
-    image: "/images/JAH-010245G.png",
+    icon: "domain_verification",
+    label: "ICNZ Building Code Review",
+    title: "Specialist storage is now expected.",
+    body: "The Insurance Council of New Zealand (ICNZ) has formally stated that lithium-ion storage requires specialist ventilation and cooling systems. Without professional-grade containment, your storage solution may be deemed inadequate for the risk.",
   },
   {
-    id: "gen3",
-    label: "Generation 3",
-    variant: "Smart Third Generation",
-    title: "Intelligent Operations",
-    description:
-      "Integrated system featuring aerosolized amine fire extinguishing, timed charging with automatic power-off, and intelligent charging management.",
-    specs: [
-      { label: "Extinguishing", value: "Aerosolized Amine" },
-      { label: "Charging", value: "Timed & Auto Power-Off" },
-    ],
-    image: "/images/JAH-010301G.png",
+    icon: "local_fire_department",
+    label: "IAG Incident Data",
+    title: "One lithium fire claim. Every month.",
+    body: "IAG New Zealand, the country's largest insurer, reports approximately one claim per month for lithium battery fire damage. This frequency is accelerating stricter underwriting—making safety cabinets a prerequisite, not an option.",
   },
   {
-    id: "gen4",
-    label: "Generation 4",
-    variant: "Flagship Generation 4",
-    title: "Connected Infrastructure",
-    description:
-      "The pinnacle of smart charging safety. Enterprise-grade containment with comprehensive remote management and monitoring via mobile and PC platforms.",
-    specs: [
-      { label: "Management", value: "Remote Mobile & PC" },
-      { label: "Security", value: "Top and Bottom Locks" },
-    ],
-    image: "/images/JAH-010401G.png",
+    icon: "verified_user",
+    label: "FENZ Compliance",
+    title: "IonGuard meets every benchmark.",
+    body: "Fire and Emergency NZ (FENZ) charging guidelines are the standard used by insurance adjusters. IonGuard Pro satisfies non-combustible surface requirements, temperature control mandates, and safe location protocols.",
   },
 ];
 
-function SolutionShowcase() {
-  const [activeTab, setActiveTab] = useState(0);
-  const active = solutions[activeTab];
-
+function InsuranceWarning() {
   return (
-    <section className="py-1 md:py-32 px-6 md:px-8 bg-surface-container-lowest">
-      <div className="max-w-7xl mx-auto">
-        <AnimatedSection>
-          <h2 className="text-xs font-label uppercase tracking-[0.4em] text-primary-container mb-12">
-            Product Generations
-          </h2>
-        </AnimatedSection>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8">
-          {/* Tab Buttons */}
-          <div className="lg:col-span-4 flex flex-col gap-2 md:gap-4">
-            {solutions.map((sol, i) => (
-              <motion.button
-                key={sol.id}
-                onClick={() => setActiveTab(i)}
-                className={`w-full text-left px-6 py-5 md:p-8 flex items-center justify-between group transition-all duration-200 ${
-                  i === activeTab
-                    ? "bg-primary-container text-on-primary"
-                    : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high"
-                }`}
-                whileTap={{ scale: 0.98 }}
-              >
-                <span className="text-lg md:text-2xl font-black uppercase tracking-tighter font-headline">
-                  {sol.label}
-                </span>
-                <span
-                  className={`material-symbols-outlined transition-opacity ${
-                    i === activeTab
-                      ? "opacity-100"
-                      : "opacity-0 group-hover:opacity-100"
-                  }`}
-                >
-                  arrow_forward
-                </span>
-              </motion.button>
-            ))}
-          </div>
-
-          {/* Content Panel */}
-          <div className="lg:col-span-8 bg-surface-container shadow-2xl overflow-hidden min-h-[400px] md:min-h-[500px]">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={active.id}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.2, ease: "easeOut" }}
-                className="flex flex-col md:flex-row h-full"
-              >
-                {/* Text */}
-                <div className="flex-1 p-8 md:p-12 flex flex-col justify-between">
-                  <div>
-                    <h4 className="font-mono text-primary-container text-sm mb-4 tracking-widest uppercase">
-                      {active.variant}
-                    </h4>
-                    <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-6 font-headline">
-                      {active.title}
-                    </h3>
-                    <p className="text-on-surface-variant leading-relaxed">
-                      {active.description}
-                    </p>
-                  </div>
-                  <div className="pt-8 border-t border-outline-variant/20 grid grid-cols-2 gap-4 mt-8">
-                    {active.specs.map((spec) => (
-                      <div key={spec.label}>
-                        <span className="block font-mono text-[10px] uppercase text-neutral-500">
-                          {spec.label}
-                        </span>
-                        <span className="block font-mono text-lg text-primary">
-                          {spec.value}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Image */}
-                <div className="flex-1 min-h-[250px] md:min-h-0 bg-surface-container-high p-8 flex items-center justify-center">
-                  <img
-                    src={active.image}
-                    alt={active.title}
-                    className="w-full h-full object-contain contrast-125 transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
+    <section className="py-10 md:py-16 bg-surface-container-lowest overflow-hidden">
+      {/* Section Header — with fire damage background */}
+      <div className="max-w-7xl mx-auto px-6 md:px-8 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/fire-damage-bg.png"
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover object-center"
+          />
+          {/* Dark overlay for text contrast — ADJUST /60 value to control darkness (0=transparent, 100=fully dark) */}
+          <div className="absolute inset-0 bg-surface-container-lowest/45" />
+          <div className="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/40 via-transparent to-surface-container-lowest/70" />
+          {/* Subtle red tint to reinforce danger */}
+          <div className="absolute inset-0 bg-gradient-to-br from-red-950/20 to-transparent" />
         </div>
+
+        {/* Content — above overlay */}
+        <div className="relative z-10 py-12 md:py-16">
+          <AnimatedSection>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="material-symbols-outlined text-error text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
+                warning
+              </span>
+              <span className="font-label text-error tracking-[0.2em] uppercase text-xs font-bold">
+                Insurance Advisory
+              </span>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-6 font-headline max-w-4xl text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+              A fire won&apos;t just damage your property.{" "}
+              <span className="text-error drop-shadow-[0_2px_8px_rgba(147,0,10,0.6)]">It could void your insurance.</span>
+            </h2>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <p className="text-neutral-300 text-lg md:text-xl leading-relaxed max-w-2xl mb-6 drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+              Most property owners don&apos;t read the fine print. Insurers do.
+              If your lithium battery storage doesn&apos;t meet industry safety
+              standards, you&apos;re not just at risk of fire—you&apos;re at
+              risk of paying for everything out of pocket.
+            </p>
+          </AnimatedSection>
+        </div>
+      </div>
+
+      {/* Stat Banner */}
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <AnimatedSection delay={0.3}>
+          <div className="flex flex-wrap gap-6 md:gap-12 mb-16 md:mb-20 py-8 border-t border-b border-outline-variant/20">
+            <div>
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="block font-mono text-4xl md:text-5xl font-bold text-error"
+              >
+                12+
+              </motion.span>
+              <span className="font-label text-[10px] uppercase text-on-surface-variant tracking-widest mt-1 block">
+                Battery fires per year (NZ)
+              </span>
+            </div>
+            <div className="w-[1px] h-16 bg-outline-variant/30 hidden md:block" />
+            <div>
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="block font-mono text-4xl md:text-5xl font-bold text-primary-container"
+              >
+                100%
+              </motion.span>
+              <span className="font-label text-[10px] uppercase text-on-surface-variant tracking-widest mt-1 block">
+                Claims deniable for recklessness
+              </span>
+            </div>
+            <div className="w-[1px] h-16 bg-outline-variant/30 hidden md:block" />
+            <div>
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="block font-mono text-4xl md:text-5xl font-bold text-primary-container"
+              >
+                $0
+              </motion.span>
+              <span className="font-label text-[10px] uppercase text-on-surface-variant tracking-widest mt-1 block">
+                What you receive if denied
+              </span>
+            </div>
+          </div>
+        </AnimatedSection>
+      </div>
+
+      {/* Liability Cards */}
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-1">
+          {liabilityCards.map((card, i) => (
+            <StaggerItem key={card.label}>
+              <div className={`p-8 md:p-10 min-h-[280px] flex flex-col justify-between group transition-colors duration-500 ${
+                i === 0 ? "bg-neutral-900" :
+                i === 3 ? "bg-primary-container text-on-primary" :
+                "bg-surface-container-low hover:bg-surface-container-high"
+              }`}>
+                <div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <span
+                      className={`material-symbols-outlined text-2xl ${
+                        i === 0 ? "text-error" :
+                        i === 3 ? "text-on-primary" :
+                        "text-primary-container"
+                      }`}
+                      style={{ fontVariationSettings: "'FILL' 1" }}
+                    >
+                      {card.icon}
+                    </span>
+                    <span className={`font-label text-[10px] tracking-[0.2em] uppercase font-bold ${
+                      i === 0 ? "text-error" :
+                      i === 3 ? "text-on-primary/80" :
+                      "text-outline"
+                    }`}>
+                      {card.label}
+                    </span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter mb-4 font-headline">
+                    {card.title}
+                  </h3>
+                </div>
+                <p className={`leading-relaxed text-sm ${
+                  i === 3 ? "text-on-primary font-medium" : "text-on-surface-variant"
+                }`}>
+                  {card.body}
+                </p>
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+
+        {/* Bottom CTA Strip */}
+        <AnimatedSection delay={0.2}>
+          <div className="mt-1 bg-surface-container-low p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h4 className="text-lg md:text-xl font-black uppercase tracking-tighter font-headline mb-2">
+                IonGuard Pro is your documented proof of{" "}
+                <span className="text-primary-container">&quot;Reasonable Care.&quot;</span>
+              </h4>
+              <p className="text-on-surface-variant text-sm max-w-xl">
+                Don&apos;t let a fine-print clause cost you your investment.
+                Professional-grade containment that satisfies insurer requirements,
+                ICNZ building standards, and FENZ safety protocols.
+              </p>
+            </div>
+            <Link
+              href="/products"
+              className="metallic-shine text-on-primary font-black uppercase tracking-wider text-sm px-8 py-4 shadow-xl hover:shadow-primary-container/20 transition-all duration-300 active:scale-[0.97] whitespace-nowrap flex-shrink-0"
+            >
+              Protect your investment
+            </Link>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
