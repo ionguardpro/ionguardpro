@@ -260,7 +260,7 @@ const liabilityCards = [
     icon: "gavel",
     label: "Reasonable Care Clause",
     title: "Your insurer can deny your claim.",
-    body: "Insurance policies contain \"Reasonable Care\" clauses. If a lithium battery fire starts because you charged on a flammable surface—a carpet, a wooden shelf, a couch—your insurer may classify it as recklessness and decline your claim entirely.",
+    body: "Insurance policies contain \"Reasonable Care\" clauses. If you suffer a loss from a lithium battery fire without taking prior steps to mitigate the risk, your insurer may classify the event as \"reckless\" and decline your claim. There is already precedent for this occurring in New Zealand.",
   },
   {
     icon: "domain_verification",
